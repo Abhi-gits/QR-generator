@@ -17,7 +17,7 @@ for i in l:
     # generating a QR code using the make() function  
     qr_img = qrcode.make(i)  
     count = random.randint(1, 99999999999999999999999999999999999999)
-    if (count > 0):
+    if (count > 0):             
         name = 'qrfile/'+"qr-img"+ str(count) +".jpg"
         qr_img.save(name)   
     print("QR saved")
